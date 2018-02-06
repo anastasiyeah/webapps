@@ -1,2 +1,37 @@
 /* Scss Document */
 
+$font-handwriting: 'Parisienne';
+
+#indexPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+    img {
+        width: 70%;
+    }
+    
+    p {
+        font-family: $font-handwriting;
+    }
+}
+
+.login {
+    input, button {
+        display: block;
+        margin-top: 15%;
+    }
+}
+
+
+
+.branding {
+    width: auto;
+    &__tagline {
+        color:red;
+    }
+    &__tagline--green {
+        color:green;
+    }
+}

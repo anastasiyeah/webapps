@@ -1,3 +1,23 @@
-@charset "UTF-8";
-/* CSS Document */
+/* Scss Document */
+#indexPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #indexPage img {
+    width: 70%; }
+  #indexPage p {
+    font-family: "Parisienne"; }
 
+.login input, .login button {
+  display: block;
+  margin-top: 15%; }
+
+.branding {
+  width: auto; }
+  .branding__tagline {
+    color: red; }
+  .branding__tagline--green {
+    color: green; }
+
+/*# sourceMappingURL=styles.css.map */
