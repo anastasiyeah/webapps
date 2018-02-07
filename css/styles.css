@@ -1,12 +1,18 @@
 /* Scss Document */
+body {
+  background-color: #9fb9bf; }
+
 .branding {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto; }
+  width: auto;
+  margin-top: 15%; }
   .branding__tagline {
-    font-family: "Parisienne"; }
+    font-family: "Parisienne";
+    font-size: 25px;
+    margin-bottom: -3%; }
   .branding__logo {
     width: 70%; }
 
@@ -14,9 +20,38 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  .login__name .login__password .login__submit .login__forgotPass .login__signup {
-    display: block;
-    margin-top: 15%; }
+  align-items: center;
+  font-family: "Raleway", sans-serif; }
+  .login__name {
+    margin-top: 5%;
+    background-color: #e8f4f3;
+    width: 160px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 14px; }
+  .login__password {
+    margin-top: 3%;
+    background-color: #e8f4f3;
+    width: 160px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 14px; }
+  .login__submit {
+    margin-top: 3%;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #e8f4f3; }
+  .login__forgotPass {
+    margin-top: 2%;
+    text-decoration: none;
+    color: black;
+    font-size: 14px; }
+  .login__signup {
+    margin-top: -3%;
+    text-decoration: none;
+    color: black;
+    font-size: 14px; }
 
 /*# sourceMappingURL=styles.css.map */
