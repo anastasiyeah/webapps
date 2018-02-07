@@ -6,12 +6,18 @@ $font-text: 'Raleway', sans-serif;
     display: grid;
     grid-template-columns: auto 23px;
     font-size: 27px;
+    &__back {
+        color: #9fb9bf;
+    }
+    &__confirm {
+        color: #9fb9bf;
+    }
 }
 
 .addagoal {
     display: flex;
     justify-content: center;
-    margin-top: -12%;
+    margin-top: -17%;
     &__name {
         font-family: $font-handwriting;
         font-size: 45px;
@@ -21,8 +27,14 @@ $font-text: 'Raleway', sans-serif;
 .category {
     font-family: $font-text;
     margin-top: -10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    
     &__label {
         font-size: 14px;
+        background-color: #9fb9bf;
+        color: white;
+    
     }
     &__type {
         font-size: 13px;
@@ -34,12 +46,28 @@ $font-text: 'Raleway', sans-serif;
     font-family: $font-text;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 70%;
-    margin-top: 5%;
-    margin-bottom: 7%;
+    margin-left: 2%;
+    margin-right: 2%;
     &__label {
         font-size: 14px;
+        background-color: #9fb9bf;
+        color: white;
+    }
+    &__textarea {
+        outline: none;
+         resize: none;
+        width: 70%;
+         margin-bottom: 5%;
+        margin-left: 15%;
+    }
+}
+
+.footer {
+    font-family: $font-text;
+    display: flex;
+    justify-content: center;
+    &__copyright {
+        font-size: 13px;
     }
 }
 
