@@ -1,23 +1,22 @@
 /* Scss Document */
-#indexPage {
+.branding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto; }
+  .branding__tagline {
+    font-family: "Parisienne"; }
+  .branding__logo {
+    width: 70%; }
+
+.login {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  #indexPage img {
-    width: 70%; }
-  #indexPage p {
-    font-family: "Parisienne"; }
-
-.login input, .login button {
-  display: block;
-  margin-top: 15%; }
-
-.branding {
-  width: auto; }
-  .branding__tagline {
-    color: red; }
-  .branding__tagline--green {
-    color: green; }
+  .login__name .login__password .login__submit .login__forgotPass .login__signup {
+    display: block;
+    margin-top: 15%; }
 
 /*# sourceMappingURL=styles.css.map */
