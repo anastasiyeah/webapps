@@ -2,36 +2,29 @@
 
 $font-handwriting: 'Parisienne';
 
-#indexPage{
+.branding {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    &__tagline {
+        font-family: $font-handwriting;
+    }
+    &__logo {
+        width: 70%;
+    }
+}
+
+
+.login {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    
-    img {
-        width: 70%;
-    }
-    
-    p {
-        font-family: $font-handwriting;
-    }
-}
-
-.login {
-    input, button {
+    &__name &__password &__submit &__forgotPass &__signup {
         display: block;
         margin-top: 15%;
     }
-}
-
-
-
-.branding {
-    width: auto;
-    &__tagline {
-        color:red;
-    }
-    &__tagline--green {
-        color:green;
-    }
+       
 }
