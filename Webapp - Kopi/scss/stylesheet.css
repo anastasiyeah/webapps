@@ -1,0 +1,89 @@
+/* CSS Document */
+body {
+  font-family: 'Raleway', sans-serif; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.header {
+  margin: auto;
+  padding: 40px 0 20px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  width: 70%; }
+  .header__logo {
+    margin: 0;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center; }
+  .header__menu {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 24px; }
+  .header__newItem {
+    margin: 0;
+    text-align: right;
+    font-weight: normal;
+    font-size: 60px;
+    padding-right: 40px; }
+
+.container {
+  margin: auto;
+  width: 55%; }
+
+.item {
+  border: solid;
+  border-width: 3px;
+  border-color: lightgrey;
+  height: 200px;
+  margin: 30px 0;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2px 2px 10px 2px #222; }
+  .item__name {
+    margin: 40px 0 10px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    color: black;
+    text-shadow: 0px 1px 2px #fff; }
+  .item__logos {
+    display: grid;
+    grid-template-columns: 88% 12%;
+    height: 77px; }
+  .item__social {
+    width: 6%;
+    padding-top: 20px;
+    padding-left: 2%;
+    margin-top: 10px;
+    visibility: hidden; }
+  .item__category {
+    width: 80%;
+    padding-bottom: 10px; }
+
+.checked {
+  display: grid;
+  grid-template-columns: auto auto auto; }
+  .checked__text {
+    text-align: center; }
+  .checked__line {
+    margin: auto;
+    height: 1px;
+    background-color: grey;
+    width: 100%; }
+
+.container .item1 {
+  background-image: url(../img/maxresdefault.jpg); }
+
+.item1 .item__social {
+  visibility: inherit; }
+
+.container .item2 {
+  background-image: url(../img/Indian-Culture-in-Malaysia.jpg); }
+
+.container .item3 {
+  background-image: url(../img/wallpaper_pictures_of_mountains_mountains-wallpaper-61.jpg);
+  opacity: 0.5; }
+
+/*# sourceMappingURL=stylesheet.css.map */
