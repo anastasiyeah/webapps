@@ -1,5 +1,6 @@
 $font-handwriting: 'Parisienne';
 $font-text: 'Raleway', sans-serif;
+$theme-color: #9fb9bf;
 
 .button {
     text-decoration: none;
@@ -7,10 +8,10 @@ $font-text: 'Raleway', sans-serif;
     grid-template-columns: auto 23px;
     font-size: 27px;
     &__back {
-        color: #9fb9bf;
+        color: $theme-color;
     }
     &__confirm {
-        color: #9fb9bf;
+        color: $theme-color;
     }
 }
 
@@ -32,7 +33,7 @@ $font-text: 'Raleway', sans-serif;
     
     &__label {
         font-size: 14px;
-        background-color: #9fb9bf;
+        background-color: $theme-color;
         color: white;
     
     }
@@ -55,9 +56,9 @@ $font-text: 'Raleway', sans-serif;
     }
     &__textarea {
         outline: none;
-         resize: none;
+        resize: none;
         width: 70%;
-         margin-bottom: 5%;
+        margin-bottom: 5%;
         margin-left: 15%;
     }
 }
