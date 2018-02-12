@@ -1,0 +1,96 @@
+/* CSS Document */
+body {
+  font-family: "Raleway", sans-serif;
+  margin: auto;
+  width: 95%;
+  max-width: 300px; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.header {
+  margin: auto;
+  padding: 10px 0 0;
+  display: grid;
+  grid-template-columns: 20% 60% 20%; }
+  .header__logo {
+    margin: 0;
+    padding-top: 20px;
+    font-weight: normal;
+    font-size: 38px;
+    text-align: center;
+    font-family: "Parisienne";
+    font-weight: bold;
+    letter-spacing: 2px; }
+  .header__menu {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 16px; }
+  .header__newItem {
+    margin: 0px 0px 0 32px;
+    padding-right: 10px;
+    text-align: right;
+    font-weight: normal;
+    font-size: 20px;
+    background-color: #9fb9bf;
+    border-radius: 25px;
+    color: white; }
+
+.item {
+  border: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  height: 130px;
+  margin: 30px 0;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 1px 1px 5px 0px #999; }
+  .item__name {
+    margin: 30px 0 10px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 0px 1px 2px #000; }
+  .item__logos {
+    display: grid;
+    grid-template-columns: 88% 12%;
+    height: 77px; }
+  .item__social {
+    width: 10%;
+    padding-top: 15px;
+    padding-left: 2%;
+    visibility: hidden; }
+  .item__category {
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+.checked {
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: auto auto auto; }
+  .checked__text {
+    margin: 0;
+    text-align: center; }
+  .checked__line {
+    margin: auto;
+    height: 1px;
+    background-color: grey;
+    width: 100%; }
+
+.item1 {
+  background-image: url(../img/maxresdefault.jpg); }
+
+.item1 .item__social {
+  visibility: inherit; }
+
+.item2 {
+  background-image: url(../img/Indian-Culture-in-Malaysia.jpg); }
+
+.item3 {
+  background-image: url(../img/wallpaper_pictures_of_mountains_mountains-wallpaper-61.jpg);
+  opacity: 0.5; }
+
+/*# sourceMappingURL=stylesheet.css.map */
