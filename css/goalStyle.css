@@ -1,6 +1,9 @@
 /* CSS Document */
 body {
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif;
+  margin: auto;
+  width: 95%;
+  max-width: 300px; }
 
 a {
   color: inherit;
@@ -8,64 +11,68 @@ a {
 
 .header {
   margin: auto;
-  padding: 40px 0 20px;
+  padding: 10px 0 0;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  width: 70%; }
+  grid-template-columns: 20% 60% 20%; }
   .header__logo {
     margin: 0;
+    padding-top: 20px;
     font-weight: normal;
-    font-size: 40px;
-    text-align: center; }
+    font-size: 38px;
+    text-align: center;
+    font-family: "Parisienne";
+    font-weight: bold;
+    letter-spacing: 2px; }
   .header__menu {
     margin: 0;
     padding-top: 20px;
-    font-size: 24px; }
+    font-size: 16px; }
   .header__newItem {
-    margin: 0;
+    margin: 0px 0px 0 32px;
+    padding-right: 10px;
     text-align: right;
     font-weight: normal;
-    font-size: 60px;
-    padding-right: 40px; }
-
-.container {
-  margin: auto;
-  width: 55%; }
+    font-size: 20px;
+    background-color: #9fb9bf;
+    border-radius: 25px;
+    color: white; }
 
 .item {
   border: solid;
-  border-width: 3px;
+  border-width: 1px;
   border-color: lightgrey;
-  height: 200px;
+  height: 130px;
   margin: 30px 0;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 10px 2px #222; }
+  box-shadow: 1px 1px 5px 0px #999; }
   .item__name {
-    margin: 40px 0 10px;
+    margin: 30px 0 10px;
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     padding-top: 20px;
-    color: black;
-    text-shadow: 0px 1px 2px #fff; }
+    color: white;
+    text-shadow: 0px 1px 2px #000; }
   .item__logos {
     display: grid;
     grid-template-columns: 88% 12%;
     height: 77px; }
   .item__social {
-    width: 6%;
-    padding-top: 20px;
+    width: 10%;
+    padding-top: 15px;
     padding-left: 2%;
-    margin-top: 10px;
     visibility: hidden; }
   .item__category {
     width: 80%;
+    padding-top: 10px;
     padding-bottom: 10px; }
 
 .checked {
+  padding: 0 10px;
   display: grid;
   grid-template-columns: auto auto auto; }
   .checked__text {
+    margin: 0;
     text-align: center; }
   .checked__line {
     margin: auto;
@@ -73,17 +80,17 @@ a {
     background-color: grey;
     width: 100%; }
 
-.container .item1 {
+.item1 {
   background-image: url(../img/maxresdefault.jpg); }
 
 .item1 .item__social {
   visibility: inherit; }
 
-.container .item2 {
+.item2 {
   background-image: url(../img/Indian-Culture-in-Malaysia.jpg); }
 
-.container .item3 {
+.item3 {
   background-image: url(../img/wallpaper_pictures_of_mountains_mountains-wallpaper-61.jpg);
   opacity: 0.5; }
 
-/*# sourceMappingURL=stylesheet.css.map */
+/*# sourceMappingURL=goalStyle.css.map */

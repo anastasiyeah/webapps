@@ -45,11 +45,14 @@
 		<textarea ref="timeframe" class="goal__textarea" autofocus placeholder="Achieved before ..." rows="6" cols="40"></textarea>
 	
 	<h3 class="goal__label">PRE-TASKS</h3>
-		<textarea ref="preTasks" class="goal__textarea" autofocus placeholder="Action steps to achieve it" rows="6" cols="40"></textarea>
-    <button type="submit">Submit</button>
-</form>
+		<textarea ref="preTasks" class="goal__textarea" autofocus placeholder="Action steps to achieve it" rows="6" cols="40"></textarea>   
+<button type="submit">Submit</button>
+    </form>
+    
+    
+    
     <ul v-for="item in goals">
-    <li>Goal: {{ item.goal }}, Motivation: {{ item.motivation }}, Timeframe: {{item.timeframe}}, Pre-tasks: {{item.preTasks}}</li>
+    <li> Goal: {{ item.goal }}, Motivation: {{ item.motivation }}, Timeframe: {{item.timeframe}}, Pre-tasks: {{item.preTasks}}</li>
     </ul>
 	
     <hr>
@@ -58,6 +61,18 @@
         <p class="footer__copyright"> &copy; 2018 BucketLife</p>
     </div>
     </div>
+    
+    <script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+    // Store
+    localStorage.setItem("goal", "");
+    // Retrieve
+    document.getElementById("item").innerHTML = localStorage.getItem("lastname");
+} else {
+    document.getElementById("item").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
     
     <script>
     var newGoal = new Vue ({
@@ -85,6 +100,7 @@
         }
     })
     </script>
+    
     
 
 </body>
