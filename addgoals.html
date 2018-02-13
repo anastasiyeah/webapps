@@ -14,7 +14,7 @@
      <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 </head>
 <body>
-		
+<div id="app">	
 <div class="button">
     <a href="#"><i class="button__back fa fa-arrow-circle-left"></i></a>
     <a href="#"><i class="button__confirm fa fa-check-square"></i></a>
@@ -24,6 +24,7 @@
     <h3 class="addagoal__name">Add a goal</h3>
 </div>
 	
+<!--
 <form class="category" action="">
   <h3 class="category__label">CATEGORIES</h3>
     <input class="category__type" type="checkbox" name="category" value="Travel">Travel
@@ -31,30 +32,60 @@
     <input class="category__type" type="checkbox" name="category" value="Work">Work
     <input class="category__type" type="checkbox" name="category" value="Other">Other
 </form>
+-->
 	
-<form class="goal">
+<form class="goal" v-on:submit.prevent="addGoal()">
 	<h3 class="goal__label">GOAL</h3>
-	<textarea class="goal__textarea" autofocus required placeholder="Write your goal" rows="6" cols="40"></textarea>
+	<textarea ref="goal" class="goal__textarea" autofocus placeholder="Write your goal" rows="6" cols="40"></textarea>
 	
 	<h3 class="goal__label">MOTIVATION</h3>
-	<textarea class="goal__textarea" autofocus placeholder="Why I want this" rows="6" cols="40"></textarea>
+	<textarea ref="motivation" class="goal__textarea" autofocus placeholder="Why I want this" rows="6" cols="40"></textarea>
 	
 	<h3 class="goal__label">TIMEFRAME</h3>
-		<textarea class="goal__textarea" autofocus placeholder="Achieved before ..." rows="6" cols="40"></textarea>
+		<textarea ref="timeframe" class="goal__textarea" autofocus placeholder="Achieved before ..." rows="6" cols="40"></textarea>
 	
 	<h3 class="goal__label">PRE-TASKS</h3>
-		<textarea class="goal__textarea" autofocus placeholder="Action steps to achieve it" rows="6" cols="40"></textarea>
+		<textarea ref="preTasks" class="goal__textarea" autofocus placeholder="Action steps to achieve it" rows="6" cols="40"></textarea>
+    <button type="submit">Submit</button>
 </form>
+    <ul v-for="item in goals">
+    <li>Goal: {{ item.goal }}, Motivation: {{ item.motivation }}, Timeframe: {{item.timeframe}}, Pre-tasks: {{item.preTasks}}</li>
+    </ul>
 	
     <hr>
     
     <div class="footer">
         <p class="footer__copyright"> &copy; 2018 BucketLife</p>
     </div>
-    
-    <div class="countGoals">
-    <h2>{{count}} Goals</h2>
     </div>
     
+    <script>
+    var newGoal = new Vue ({
+        el: '#app',
+        data: {
+            goals: [
+            {
+                goal: '',
+                motivation: '',
+                timeframe: '',
+                preTasks: '',
+            }
+                ]
+        },
+        methods: {
+            addGoal() {
+                var goal = {
+                    goal: this.$refs.goal.value,
+                    motivation: this.$refs.motivation.value,
+                    timeframe: this.$refs.timeframe.value,
+                    preTasks: this.$refs.preTasks.value
+                }
+                this.goals.push(goal);
+            }
+        }
+    })
+    </script>
+    
+
 </body>
 </html>
