@@ -11,28 +11,26 @@
 	
 	<link href="css/goalstyles.css" rel="stylesheet">
 	
-     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/vue"></script> 
+
+    <script>
+    var bleep = new Audio ();
+    bleep.src ="audio/bleep.mp3";
+    </script>     
+
+    
 </head>
 <body>
 <div id="app">	
 <div class="button">
     <a href="goals.html"><i class="button__back fa fa-arrow-circle-left"></i></a>
-    <a href="goals.html"><i class="button__confirm fa fa-check-square"></i></a>
+    <a href="goals.html" onmousedown="bleep.play()"><i class="button__confirm fa fa-check-square"></i></a>
 </div>
     
 <div class="addagoal">
     <h3 class="addagoal__name">Add a goal</h3>
 </div>
 	
-<!--
-<form class="category" action="">
-  <h3 class="category__label">CATEGORIES</h3>
-    <input class="category__type" type="checkbox" name="category" value="Travel">Travel
-    <input class="category__type" type="checkbox" name="category" value="Personal">Personal
-    <input class="category__type" type="checkbox" name="category" value="Work">Work
-    <input class="category__type" type="checkbox" name="category" value="Other">Other
-</form>
--->
 	
 <form class="goal" v-on:submit.prevent="addGoal()">
 	<h3 class="goal__label">GOAL</h3>
@@ -46,14 +44,19 @@
 	
 	<h3 class="goal__label">PRE-TASKS</h3>
 		<textarea ref="preTasks" class="goal__textarea" autofocus placeholder="Action steps to achieve it" rows="6" cols="40"></textarea>   
-<button type="submit">Submit</button>
+
     </form>
     
+  <a href="goals.html"><button type="submit" >Submit</button></a>  
     
-    
-    <ul v-for="item in goals">
+   
+
+
+<!--//    <ul v-for="item in goals">
     <li> Goal: {{ item.goal }}, Motivation: {{ item.motivation }}, Timeframe: {{item.timeframe}}, Pre-tasks: {{item.preTasks}}</li>
     </ul>
+    
+    //-->
 	
     <hr>
     
@@ -63,18 +66,12 @@
     </div>
     
     <script>
-// Check browser support
-if (typeof(Storage) !== "undefined") {
-    // Store
-    localStorage.setItem("goal", "");
-    // Retrieve
-    document.getElementById("item").innerHTML = localStorage.getItem("lastname");
-} else {
-    document.getElementById("item").innerHTML = "Sorry, your browser does not support Web Storage...";
-}
-</script>
+    var goal = 'My goal'    
+    
+localStorage.setItem('goal', goal) 
     
     <script>
+        
     var newGoal = new Vue ({
         el: '#app',
         data: {
@@ -97,11 +94,13 @@ if (typeof(Storage) !== "undefined") {
                 }
                 this.goals.push(goal);
             }
+            
         }
+
+   
     })
+    
     </script>
-    
-    
 
 </body>
 </html>

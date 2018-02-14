@@ -18,7 +18,7 @@ $theme-color: #9fb9bf;
 .addagoal {
     display: flex;
     justify-content: center;
-    margin-top: -17%;
+    margin-top: -5%;
     &__name {
         font-family: $font-handwriting;
         font-size: 45px;
@@ -49,6 +49,7 @@ $theme-color: #9fb9bf;
     flex-direction: column;
     margin-left: 2%;
     margin-right: 2%;
+    margin-top: -4%;
     &__label {
         font-size: 14px;
         background-color: #9fb9bf;
