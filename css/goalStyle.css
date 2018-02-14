@@ -81,16 +81,16 @@ a {
     width: 100%; }
 
 .item1 {
-  background-image: url(../img/maxresdefault.jpg); }
+  background-image: url(../images/maxresdefault.jpg); }
 
 .item1 .item__social {
   visibility: inherit; }
 
 .item2 {
-  background-image: url(../img/Indian-Culture-in-Malaysia.jpg); }
+  background-image: url(../images/Indian-Culture-in-Malaysia.jpg); }
 
 .item3 {
-  background-image: url(../img/wallpaper_pictures_of_mountains_mountains-wallpaper-61.jpg);
+  background-image: url(../images/wallpaper_pictures_of_mountains_mountains-wallpaper-61.jpg);
   opacity: 0.5; }
 
 /*# sourceMappingURL=goalStyle.css.map */
