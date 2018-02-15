@@ -11,6 +11,10 @@
 	
 	<link href="css/ChanceStyle.css" rel="stylesheet">
 	
+     <script>
+    var bleep = new Audio ();
+    bleep.src ="audio/bleep.mp3";
+    </script> 
 </head>
     
 <body>
@@ -18,7 +22,7 @@
 <div id="app">	
     <div class="button">
         <a href="goals.html"><i class="button__back fa fa-arrow-circle-left"></i></a>
-        <a href="goals.html" onclick="add_goal()"><i class="button__confirm fa fa-check-square"></i></a>
+        <a href="goals.html" onclick="add_goal()" onmousedown="bleep.play()"><i class="button__confirm fa fa-check-square"></i></a>
     </div>
         
     <div class="addagoal">

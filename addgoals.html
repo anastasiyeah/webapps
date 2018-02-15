@@ -34,7 +34,7 @@
 	
 <form class="goal" v-on:submit.prevent="addGoal()">
 	<h3 class="goal__label">GOAL</h3>
-	<textarea ref="goal" class="goal__textarea" autofocus placeholder="Write your goal" rows="6" cols="40"></textarea>
+	<textarea ref="goal" id="GoalName" class="goal__textarea" autofocus placeholder="Write your goal" rows="6" cols="40"></textarea>
 	
 	<h3 class="goal__label">MOTIVATION</h3>
 	<textarea ref="motivation" class="goal__textarea" autofocus placeholder="Why I want this" rows="6" cols="40"></textarea>
@@ -66,9 +66,10 @@
     </div>
     
     <script>
-    var goal = 'My goal'    
+    var goal = ''    
     
-localStorage.setItem('goal', goal) 
+localStorage.setItem('goal', goal);
+</script>
     
     <script>
         
@@ -101,6 +102,7 @@ localStorage.setItem('goal', goal)
     })
     
     </script>
-
+    
+    <script src="js/script.js"></script>
 </body>
 </html>

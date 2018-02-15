@@ -11,7 +11,7 @@
 .addagoal {
   display: flex;
   justify-content: center;
-  margin-top: -17%; }
+  margin-top: -5%; }
   .addagoal__name {
     font-family: "Parisienne";
     font-size: 45px; }
@@ -34,7 +34,8 @@
   display: flex;
   flex-direction: column;
   margin-left: 2%;
-  margin-right: 2%; }
+  margin-right: 2%;
+  margin-top: -4%; }
   .goal__label {
     font-size: 14px;
     background-color: #9fb9bf;

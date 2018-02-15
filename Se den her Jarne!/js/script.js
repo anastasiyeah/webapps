@@ -9,3 +9,5 @@ function add_goal(){
 
 document.getElementById("fornavnet").innerHTML = localStorage.getItem("frontname");
 document.getElementById("efternavnet").innerHTML = localStorage.getItem("lastname");
+
+
