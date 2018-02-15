@@ -1,6 +1,9 @@
 /* Scss Document */
 body {
-  background-color: #9fb9bf; }
+  background-color: #9fb9bf;
+  margin: auto;
+  width: 95%;
+  max-width: 300px; }
 
 .branding {
   display: flex;

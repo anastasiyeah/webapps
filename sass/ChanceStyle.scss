@@ -2,6 +2,12 @@ $font-handwriting: 'Parisienne';
 $font-text: 'Raleway', sans-serif;
 $theme-color: #9fb9bf;
 
+body{
+    margin: auto;
+    width: 95%;
+    max-width: 300px;
+}
+
 .button {
     text-decoration: none;
     display: grid;
@@ -18,28 +24,10 @@ $theme-color: #9fb9bf;
 .addagoal {
     display: flex;
     justify-content: center;
-    margin-top: -5%;
+    margin-top: -18%;
     &__name {
         font-family: $font-handwriting;
         font-size: 45px;
-    }
-}
-
-.category {
-    font-family: $font-text;
-    margin-top: -10%;
-    margin-left: 2%;
-    margin-right: 2%;
-    
-    &__label {
-        font-size: 14px;
-        background-color: $theme-color;
-        color: white;
-    
-    }
-    &__type {
-        font-size: 13px;
-        margin-right: 10px;
     }
 }
 
@@ -49,7 +37,7 @@ $theme-color: #9fb9bf;
     flex-direction: column;
     margin-left: 2%;
     margin-right: 2%;
-    margin-top: -4%;
+    margin-top: -12%;
     &__label {
         font-size: 14px;
         background-color: #9fb9bf;
