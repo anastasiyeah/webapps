@@ -1,0 +1,81 @@
+/* Scss Document */
+
+$font-handwriting: 'Parisienne';
+$font-text: 'Raleway', sans-serif;
+
+body {
+    background-color: #9fb9bf;
+}
+
+.branding {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-top: 15%;
+    &__tagline {
+        font-family: $font-handwriting;
+        font-size: 25px;
+        margin-bottom: -3%;
+    }
+    &__logo {
+        width: 70%;
+    }
+}
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-text;
+    &__name {
+        
+        margin-top: 5%;
+        background-color: #e8f4f3;
+        width: 160px;
+        height: 25px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    &__password{
+    
+        margin-top: 3%;
+        background-color: #e8f4f3;
+        width: 160px;
+        height: 25px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    
+    &__submit {
+     
+        margin-top: 3%;
+        width: 100px;
+        height: 25px;
+        border-radius: 5px;
+        font-size: 14px;
+        background-color: #e8f4f3;
+    }
+    
+    &__forgotPass {
+     
+        margin-top: 2%;
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+      
+    }
+    
+    &__signup {
+        margin-top: -3%;
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+       
+    }
+       
+}
+

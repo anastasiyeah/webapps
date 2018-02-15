@@ -1,0 +1,74 @@
+$font-handwriting: 'Parisienne';
+$font-text: 'Raleway', sans-serif;
+$theme-color: #9fb9bf;
+
+.button {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: auto 23px;
+    font-size: 27px;
+    &__back {
+        color: $theme-color;
+    }
+    &__confirm {
+        color: $theme-color;
+    }
+}
+
+.addagoal {
+    display: flex;
+    justify-content: center;
+    margin-top: -17%;
+    &__name {
+        font-family: $font-handwriting;
+        font-size: 45px;
+    }
+}
+
+.category {
+    font-family: $font-text;
+    margin-top: -10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+    &__label {
+        font-size: 14px;
+        background-color: $theme-color;
+        color: white;
+    
+    }
+    &__type {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+}
+
+.goal {
+    font-family: $font-text;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%;
+    &__label {
+        font-size: 14px;
+        background-color: #9fb9bf;
+        color: white;
+    }
+    &__textarea {
+        outline: none;
+        resize: none;
+        width: 70%;
+        margin-bottom: 5%;
+        margin-left: 15%;
+    }
+}
+
+.footer {
+    font-family: $font-text;
+    display: flex;
+    justify-content: center;
+    &__copyright {
+        font-size: 13px;
+    }
+}
+
