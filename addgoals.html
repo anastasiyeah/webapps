@@ -9,100 +9,50 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-	<link href="css/goalstyles.css" rel="stylesheet">
+	<link href="css/ChanceStyle.css" rel="stylesheet">
 	
-     <script src="https://cdn.jsdelivr.net/npm/vue"></script> 
-
-    <script>
+     <script>
     var bleep = new Audio ();
     bleep.src ="audio/bleep.mp3";
-    </script>     
-
-    
+    </script> 
 </head>
+    
 <body>
+    
 <div id="app">	
-<div class="button">
-    <a href="goals.html"><i class="button__back fa fa-arrow-circle-left"></i></a>
-    <a href="goals.html" onmousedown="bleep.play()"><i class="button__confirm fa fa-check-square"></i></a>
-</div>
-    
-<div class="addagoal">
-    <h3 class="addagoal__name">Add a goal</h3>
-</div>
-	
-	
-<form class="goal" v-on:submit.prevent="addGoal()">
-	<h3 class="goal__label">GOAL</h3>
-	<textarea ref="goal" id="GoalName" class="goal__textarea" autofocus placeholder="Write your goal" rows="6" cols="40"></textarea>
-	
-	<h3 class="goal__label">MOTIVATION</h3>
-	<textarea ref="motivation" class="goal__textarea" autofocus placeholder="Why I want this" rows="6" cols="40"></textarea>
-	
-	<h3 class="goal__label">TIMEFRAME</h3>
-		<textarea ref="timeframe" class="goal__textarea" autofocus placeholder="Achieved before ..." rows="6" cols="40"></textarea>
-	
-	<h3 class="goal__label">PRE-TASKS</h3>
-		<textarea ref="preTasks" class="goal__textarea" autofocus placeholder="Action steps to achieve it" rows="6" cols="40"></textarea>   
-
-    </form>
-    
-  <a href="goals.html"><button type="submit" >Submit</button></a>  
-    
-   
-
-
-<!--//    <ul v-for="item in goals">
-    <li> Goal: {{ item.goal }}, Motivation: {{ item.motivation }}, Timeframe: {{item.timeframe}}, Pre-tasks: {{item.preTasks}}</li>
-    </ul>
-    
-    //-->
-	
-    <hr>
-    
-    <div class="footer">
-        <p class="footer__copyright"> &copy; 2018 BucketLife</p>
+    <div class="button">
+        <a href="goals.html"><i class="button__back fa fa-arrow-circle-left"></i></a>
+        <a href="goals.html" onclick="add_goal()" onmousedown="bleep.play()"><i class="button__confirm fa fa-check-square"></i></a>
     </div>
-    </div>
-    
-    <script>
-    var goal = ''    
-    
-localStorage.setItem('goal', goal);
-</script>
-    
-    <script>
         
-    var newGoal = new Vue ({
-        el: '#app',
-        data: {
-            goals: [
-            {
-                goal: '',
-                motivation: '',
-                timeframe: '',
-                preTasks: '',
-            }
-                ]
-        },
-        methods: {
-            addGoal() {
-                var goal = {
-                    goal: this.$refs.goal.value,
-                    motivation: this.$refs.motivation.value,
-                    timeframe: this.$refs.timeframe.value,
-                    preTasks: this.$refs.preTasks.value
-                }
-                this.goals.push(goal);
-            }
-            
-        }
-
-   
-    })
+    <div class="addagoal">
+        <h3 class="addagoal__name">Add a goal</h3>
+    </div>
     
-    </script>
+    <form class="goal" v-on:submit.prevent="addGoal()">
+        <h3 class="goal__label">GOAL</h3>
+        <textarea id="GoalName" ref="goal" class="goal__textarea" autofocus placeholder="Write your goal" rows="6" cols="40"></textarea>
+
+        <h3 class="goal__label">MOTIVATION</h3>
+        <textarea ref="motivation" class="goal__textarea" autofocus placeholder="Why I want this" rows="6" cols="40"></textarea>
+
+        <h3 class="goal__label">TIMEFRAME</h3>
+            <textarea ref="timeframe" class="goal__textarea" autofocus placeholder="Achieved before ..." rows="6" cols="40"></textarea>
+
+        <h3 class="goal__label">PRE-TASKS</h3>
+            <textarea ref="preTasks" class="goal__textarea" autofocus placeholder="Action steps to achieve it" rows="6" cols="40"></textarea>   
+    </form>
+
+        <hr>
+
+    <div class="footer">
+            <p class="footer__copyright"> &copy; 2018 BucketLife</p>
+    </div>
+</div>
     
     <script src="js/script.js"></script>
+    
+    
+
 </body>
 </html>

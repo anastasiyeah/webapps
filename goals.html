@@ -10,9 +10,8 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Parisienne|Raleway" rel="stylesheet"> 
-
     
-   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
 </head>
 
@@ -20,16 +19,13 @@
 
 	<header class="header">
 		
-        <span></span>
-		<a href="#"><h1 class="header__logo">BucketList</h1></a>
-		<a href="addgoals.html"><h2 class="header__newItem">+</h2></a>
+		<h1 class="header__logo">BucketList</h1>
+		<a href="addgoals.html" class="header__newItem"></a>
 
 	</header>
 
-    <h1><script> document.write(localStorage.goal);</script></h1>
-        
 	<div class="item item1">
-		<p class="item__name">Rejs verdenen rundt</p>	
+		<p class="item__name"><script>document.write(localStorage.Goal_Name);</script></p>	
     </div>
     
 	<div class="item item2">
@@ -48,6 +44,11 @@
         <p class="item__name">Bestig et bjerg</p>
     </div>
     
-	<script src="js/script.js"></script>
+	
 </body>
+
+<script src="js/script.js"></script>
+    
+    
+
 </html>
