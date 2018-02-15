@@ -30,7 +30,7 @@ a {
     background-image: url(../images/addButton.jpg);
     background-size: cover; }
 
-.item {
+.Single-goal {
   border: solid;
   border-width: 1px;
   border-color: lightgrey;
@@ -39,23 +39,23 @@ a {
   background-size: cover;
   background-position: center;
   box-shadow: 1px 1px 5px 0px #999; }
-  .item__name {
+  .Single-goal__name {
     margin: 30px 0 10px;
     text-align: center;
     font-size: 20px;
     padding-top: 20px;
     color: white;
     text-shadow: 0px 1px 2px #000; }
-  .item__logos {
+  .Single-goal__logos {
     display: grid;
     grid-template-columns: 88% 12%;
     height: 77px; }
-  .item__social {
+  .Single-goal__social {
     width: 10%;
     padding-top: 15px;
     padding-left: 2%;
     visibility: hidden; }
-  .item__category {
+  .Single-goal__category {
     width: 80%;
     padding-top: 10px;
     padding-bottom: 10px; }
@@ -73,17 +73,14 @@ a {
     background-color: grey;
     width: 100%; }
 
-.item1 {
-  background-image: url(../images/maxresdefault.jpg); }
+.Single-goal1 {
+  background-image: url(../images/RandomGoalPhoto1.jpg); }
 
-.item1 .item__social {
-  visibility: inherit; }
+.Single-goal2 {
+  background-image: url(../images/RandomGoalPhoto2.jpg); }
 
-.item2 {
-  background-image: url(../images/Indian-Culture-in-Malaysia.jpg); }
-
-.item3 {
-  background-image: url(../images/wallpaper_pictures_of_mountains_mountains-wallpaper-61.jpg);
+.Single-goal3 {
+  background-image: url(../images/RandomGoalPhoto3.jpg);
   opacity: 0.5; }
 
 /*# sourceMappingURL=goalStyle.css.map */

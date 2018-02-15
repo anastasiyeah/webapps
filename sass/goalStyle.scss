@@ -40,7 +40,7 @@ a{
     }
 }
 
-.item{
+.Single-goal{
 	border: solid;
 	border-width: 1px;
 	border-color: lightgrey;
@@ -91,19 +91,15 @@ a{
         }
 }
 
-.item1 {
-	background-image: url(../images/maxresdefault.jpg);
+.Single-goal1 {
+	background-image: url(../images/RandomGoalPhoto1.jpg);
 }
 
-.item1 .item__social{
-	visibility: inherit;
+.Single-goal2{
+	background-image: url(../images/RandomGoalPhoto2.jpg);
 }
 
-.item2{
-	background-image: url(../images/Indian-Culture-in-Malaysia.jpg);
-}
-
-.item3{
-	background-image: url(../images/wallpaper_pictures_of_mountains_mountains-wallpaper-61.jpg);
+.Single-goal3{
+	background-image: url(../images/RandomGoalPhoto3.jpg);
 	opacity: 0.5;
 }
