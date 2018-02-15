@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add a goal</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Parisienne|Raleway" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link href="css/ChanceStyle.css" rel="stylesheet">
+	
+     <script>
+    var bleep = new Audio ();
+    bleep.src ="audio/bleep.mp3";
+    </script> 
+</head>
+    
+<body>
+    
+<div id="app">	
+    <div class="button">
+        <a href="goals.html"><i class="button__back fa fa-arrow-circle-left"></i></a>
+        <a href="goals.html" onclick="add_goal()" onmousedown="bleep.play()"><i class="button__confirm fa fa-check-square"></i></a>
+    </div>
+        
+    <div class="addagoal">
+        <h3 class="addagoal__name">Add a goal</h3>
+    </div>
+    
+    <form class="goal" v-on:submit.prevent="addGoal()">
+        <h3 class="goal__label">GOAL</h3>
+        <textarea id="GoalName" ref="goal" class="goal__textarea" autofocus placeholder="Write your goal" rows="6" cols="40"></textarea>
+
+        <h3 class="goal__label">MOTIVATION</h3>
+        <textarea ref="motivation" class="goal__textarea" autofocus placeholder="Why I want this" rows="6" cols="40"></textarea>
+
+        <h3 class="goal__label">TIMEFRAME</h3>
+            <textarea ref="timeframe" class="goal__textarea" autofocus placeholder="Achieved before ..." rows="6" cols="40"></textarea>
+
+        <h3 class="goal__label">PRE-TASKS</h3>
+            <textarea ref="preTasks" class="goal__textarea" autofocus placeholder="Action steps to achieve it" rows="6" cols="40"></textarea>   
+    </form>
+
+        <hr>
+
+    <div class="footer">
+            <p class="footer__copyright"> &copy; 2018 BucketLife</p>
+    </div>
+</div>
+    
+    <script src="js/script.js"></script>
+    
+    
+
+</body>
+</html>
