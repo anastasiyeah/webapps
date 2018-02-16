@@ -11,7 +11,7 @@ body {
 }
 
 .branding {
-        display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ body {
     }
 }
 
-
+    
 .login {
     display: flex;
     flex-direction: column;
@@ -35,7 +35,6 @@ body {
     align-items: center;
     font-family: $font-text;
     &__name {
-        
         margin-top: 5%;
         background-color: #e8f4f3;
         width: 160px;
@@ -44,7 +43,6 @@ body {
         font-size: 14px;
     }
     &__password{
-    
         margin-top: 3%;
         background-color: #e8f4f3;
         width: 160px;
@@ -52,33 +50,29 @@ body {
         border-radius: 5px;
         font-size: 14px;
     }
-    
     &__submit {
-     
         margin-top: 3%;
         width: 100px;
         height: 25px;
         border-radius: 5px;
         font-size: 14px;
         background-color: #e8f4f3;
+        text-decoration: none;
+        color: gray;
+        text-align: center;
+        padding: 8px 0 0;
     }
-    
     &__forgotPass {
-     
         margin-top: 2%;
         text-decoration: none;
         color: black;
-        font-size: 14px;
-      
+        font-size: 14px;     
     }
-    
     &__signup {
         margin-top: -3%;
         text-decoration: none;
         color: black;
-        font-size: 14px;
-       
-    }
-       
+        font-size: 14px; 
+    }     
 }
 
