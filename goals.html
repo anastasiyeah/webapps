@@ -12,7 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Parisienne|Raleway" rel="stylesheet"> 
     
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-
+    
+    <script>
+        var complete = new Audio ();
+         complete.src ="audio/succes.mp3";
+    </script>
     
     
 </head>
@@ -33,7 +37,7 @@
             </section>
         </div>
     </div>
-		 <button>Done Goal</button>
+		 <button onmousedown="complete.play()" >Done Goal</button>
     <div class="checked">
 		<span class="checked__line"></span>
         <p class="checked__text">Completed</p>
