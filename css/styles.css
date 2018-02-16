@@ -45,7 +45,11 @@ body {
     height: 25px;
     border-radius: 5px;
     font-size: 14px;
-    background-color: #e8f4f3; }
+    background-color: #e8f4f3;
+    text-decoration: none;
+    color: gray;
+    text-align: center;
+    padding: 8px 0 0; }
   .login__forgotPass {
     margin-top: 2%;
     text-decoration: none;
