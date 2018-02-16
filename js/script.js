@@ -27,12 +27,15 @@ $(document).ready(function () {
     });
 
     $('#taskList').on("click", "li", function (event) {
+        console.log("click");
         self = $(this);
+        console.log(self);
         taskID = self.attr('id');
+        console.log(self[0].slideUp);
         localStorage.removeItem(taskID);
-        self.slideUp('slow', function () {
+       // self.slideUp('slow', function () {
             self.remove();
-        });
+        //});
 
     });
 
