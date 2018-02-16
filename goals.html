@@ -23,18 +23,14 @@
 		<a href="addgoals.html" class="header__newItem"></a>
 
 	</header>
-
-	<a href="editgoals.html">
-        <div class="Single-goal Single-goal1">
-		  <p class="Single-goal__name"><script>document.write(localStorage.Goal_Name);</script></p>	
-        </div>
-    </a>
     
-	<div class="Single-goal Single-goal2">
-		<p class="Single-goal__name">Besøg Indien</p>
+    <div class="goals">
+        <div id="container">
+            <section id="taskIOSection">
+                <ul id="taskList"></ul>
+            </section>
+        </div>
     </div>
-        
-    <div id="item4"></div>
 		
     <div class="checked">
 		<span class="checked__line"></span>
@@ -42,14 +38,18 @@
         <span class="checked__line"></span>	
     </div>		
 
-	<div class="Single-goal Single-goal3">
-        <p class="Single-goal__name">Bestig et bjerg</p>
-    </div>
+    <a href="editgoals.html">
+        <div class="Single-goal Single-goal3">
+            <p class="Single-goal__name">Bestig et bjerg</p>
+        </div>
+    </a>
     
-	
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="js/script.js"></script>
+    
 </body>
 
-<script src="js/script.js"></script>
+
     
     
 

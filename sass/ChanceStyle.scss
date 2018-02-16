@@ -21,23 +21,22 @@ body{
     }
 }
 
-.addagoal {
-    display: flex;
-    justify-content: center;
-    margin-top: -18%;
-    &__name {
-        font-family: $font-handwriting;
-        font-size: 45px;
-    }
-}
-
-.goal {
+.addGoal {
     font-family: $font-text;
     display: flex;
     flex-direction: column;
     margin-left: 2%;
     margin-right: 2%;
-    margin-top: -12%;
+    margin-top: 0%;
+    &__heading {
+        display: flex;
+        justify-content: center;
+        &__name {
+           font-family: $font-handwriting;
+            font-size: 45px;
+            margin: 0; 
+        }
+    }
     &__label {
         font-size: 14px;
         background-color: #9fb9bf;

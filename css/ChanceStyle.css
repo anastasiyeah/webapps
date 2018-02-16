@@ -13,26 +13,25 @@ body {
   .button__confirm {
     color: #9fb9bf; }
 
-.addagoal {
-  display: flex;
-  justify-content: center;
-  margin-top: -18%; }
-  .addagoal__name {
-    font-family: "Parisienne";
-    font-size: 45px; }
-
-.goal {
+.addGoal {
   font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
   margin-left: 2%;
   margin-right: 2%;
-  margin-top: -12%; }
-  .goal__label {
+  margin-top: 0%; }
+  .addGoal__heading {
+    display: flex;
+    justify-content: center; }
+    .addGoal__heading__name {
+      font-family: "Parisienne";
+      font-size: 45px;
+      margin: 0; }
+  .addGoal__label {
     font-size: 14px;
     background-color: #9fb9bf;
     color: white; }
-  .goal__textarea {
+  .addGoal__textarea {
     outline: none;
     resize: none;
     width: 70%;
