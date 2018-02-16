@@ -18,20 +18,36 @@
 </head>
     
 <body>
-    
-<div id="app">	
-    <div class="button">
-        <a href="goals.html"><i class="button__back fa fa-arrow-circle-left"></i></a>
-        <a href="goals.html" onclick="add_goal()" onmousedown="bleep.play()"><i class="button__confirm fa fa-check-square"></i></a>
-    </div>
+
+<div class="addGoal">
+    <form id="taskEntryForm">
         
-    <div class="addagoal">
-        <h3 class="addagoal__name">Add a goal</h3>
-    </div>
+        <div class="button">
+            <a href="goals.html"><i class="button__back fa fa-arrow-circle-left"></i></a>
+            <input type="submit" class="button__confirm fa fa-check-square" onmousedown="bleep.play()"  >
+            <a href="goals.html" ><i class="button__confirm fa fa-check-square"></i></a>
+        </div>
+
+        <div class="addGoal__heading">
+            <h3 class="addGoal__heading__name">Add a goal</h3>
+        </div>
+
+        <h3 class="addGoal__label">GOAL</h3>
+
+        <div id="container">
+            <section id="taskIOSection">
+                <div id="formContainer">
+                        <input id="taskInput" placeholder="What would you like to do today?" />
+                </div>
+            </section>
+        </div>
+
+    </form>
+</div>
     
     <form class="goal" v-on:submit.prevent="addGoal()">
         <h3 class="goal__label">GOAL</h3>
-        <textarea id="GoalName" ref="goal" class="goal__textarea" autofocus placeholder="Write your goal" rows="6" cols="40"></textarea>
+        
 
         <h3 class="goal__label">MOTIVATION</h3>
         <textarea ref="motivation" class="goal__textarea" autofocus placeholder="Why I want this" rows="6" cols="40"></textarea>
@@ -50,9 +66,8 @@
     </div>
 </div>
     
-    <script src="js/script.js"></script>
-    
-    
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="js/script.js"></script>    
 
 </body>
 </html>

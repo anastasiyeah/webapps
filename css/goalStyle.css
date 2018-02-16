@@ -30,6 +30,25 @@ a {
     background-image: url(../images/addButton.jpg);
     background-size: cover; }
 
+.goals ul {
+  padding: 0; }
+
+.goals li {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  padding: 55px 0;
+  margin: 20px 0;
+  border: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  font-size: 20px;
+  color: black;
+  box-shadow: 1px 1px 5px 0px #999;
+  background-image: url(../images/leafBackground.jpg);
+  background-size: cover;
+  background-position: center; }
+
 .Single-goal {
   border: solid;
   border-width: 1px;
@@ -46,19 +65,6 @@ a {
     padding-top: 20px;
     color: white;
     text-shadow: 0px 1px 2px #000; }
-  .Single-goal__logos {
-    display: grid;
-    grid-template-columns: 88% 12%;
-    height: 77px; }
-  .Single-goal__social {
-    width: 10%;
-    padding-top: 15px;
-    padding-left: 2%;
-    visibility: hidden; }
-  .Single-goal__category {
-    width: 80%;
-    padding-top: 10px;
-    padding-bottom: 10px; }
 
 .checked {
   padding: 0 10px;
