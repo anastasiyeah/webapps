@@ -3,16 +3,6 @@ body {
   width: 95%;
   max-width: 300px; }
 
-.button {
-  text-decoration: none;
-  display: grid;
-  grid-template-columns: auto 23px;
-  font-size: 27px; }
-  .button__back {
-    color: #9fb9bf; }
-  .button__confirm {
-    color: #9fb9bf; }
-
 .addGoal {
   font-family: "Raleway", sans-serif;
   display: flex;
@@ -27,11 +17,25 @@ body {
       font-family: "Parisienne";
       font-size: 45px;
       margin: 0; }
-  .addGoal__label {
+  .addGoal__button {
+    text-decoration: none;
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: auto 23px;
+    font-size: 27px; }
+    .addGoal__button a {
+      background-image: url(../images/back.gif);
+      background-size: cover;
+      width: 30px;
+      height: 30px; }
+    .addGoal__button__confirm {
+      height: 30px; }
+  .addGoal__label h3 {
     font-size: 14px;
     background-color: #9fb9bf;
     color: white; }
-  .addGoal__textarea {
+  .addGoal__label input {
+    height: 50px;
     outline: none;
     resize: none;
     width: 70%;

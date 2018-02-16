@@ -8,19 +8,6 @@ body{
     max-width: 300px;
 }
 
-.button {
-    text-decoration: none;
-    display: grid;
-    grid-template-columns: auto 23px;
-    font-size: 27px;
-    &__back {
-        color: $theme-color;
-    }
-    &__confirm {
-        color: $theme-color;
-    }
-}
-
 .addGoal {
     font-family: $font-text;
     display: flex;
@@ -37,17 +24,38 @@ body{
             margin: 0; 
         }
     }
-    &__label {
-        font-size: 14px;
-        background-color: #9fb9bf;
-        color: white;
+    &__button {
+    text-decoration: none;
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: auto 23px;
+    font-size: 27px;
+        a {
+            background-image: url(../images/back.gif);
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+        }
+        &__confirm {
+            height: 30px;
+            
+        }
     }
-    &__textarea {
-        outline: none;
-        resize: none;
-        width: 70%;
-        margin-bottom: 5%;
-        margin-left: 15%;
+
+    &__label {
+        h3 {
+            font-size: 14px;
+            background-color: #9fb9bf;
+            color: white;
+        }
+        input {
+            height: 50px;
+            outline: none;
+            resize: none;
+            width: 70%;
+            margin-bottom: 5%;
+            margin-left: 15%;
+        }
     }
 }
 

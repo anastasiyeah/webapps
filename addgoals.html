@@ -22,49 +22,43 @@
 <div class="addGoal">
     <form id="taskEntryForm">
         
-        <div class="button">
-            <a href="goals.html"><i class="button__back fa fa-arrow-circle-left"></i></a>
-            <input type="submit" class="button__confirm fa fa-check-square" onmousedown="bleep.play()"  >
-            <a href="goals.html" ><i class="button__confirm fa fa-check-square"></i></a>
+        <div class="addGoal__button">
+            <a href="goals.html"></a>
+            <input type="image" src="images/check.gif" class="addGoal__button__confirm" alt="Submit" onmousedown="bleep.play()"  >
         </div>
 
         <div class="addGoal__heading">
             <h3 class="addGoal__heading__name">Add a goal</h3>
         </div>
 
-        <h3 class="addGoal__label">GOAL</h3>
-
-        <div id="container">
-            <section id="taskIOSection">
-                <div id="formContainer">
-                        <input id="taskInput" placeholder="What would you like to do today?" />
-                </div>
-            </section>
+        <div class="addGoal__label">
+            <h3>GOAL</h3>
+            <div id="container">
+                <section id="taskIOSection">
+                    <div id="formContainer">
+                            <input id="taskInput" placeholder="What is the name of your goal?" />
+                    </div>
+                </section>
+            </div>
+      
+            <h3>MOTIVATION</h3>
+            <input placeholder="Why I want this"/>
+      
+            <h3>TIMEFRAME</h3>
+            <input placeholder="Achieved before ..." />
+          
+            <h3>PRE-TASKS</h3>
+            <input placeholder="Action steps to achieve it"/>
         </div>
-
+        
     </form>
 </div>
     
-    <form class="goal" v-on:submit.prevent="addGoal()">
-        <h3 class="goal__label">GOAL</h3>
-        
-
-        <h3 class="goal__label">MOTIVATION</h3>
-        <textarea ref="motivation" class="goal__textarea" autofocus placeholder="Why I want this" rows="6" cols="40"></textarea>
-
-        <h3 class="goal__label">TIMEFRAME</h3>
-            <textarea ref="timeframe" class="goal__textarea" autofocus placeholder="Achieved before ..." rows="6" cols="40"></textarea>
-
-        <h3 class="goal__label">PRE-TASKS</h3>
-            <textarea ref="preTasks" class="goal__textarea" autofocus placeholder="Action steps to achieve it" rows="6" cols="40"></textarea>   
-    </form>
-
-        <hr>
+    <hr>
 
     <div class="footer">
             <p class="footer__copyright"> &copy; 2018 BucketLife</p>
     </div>
-</div>
     
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="js/script.js"></script>    
